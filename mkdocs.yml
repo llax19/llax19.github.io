@@ -1,0 +1,4 @@
+site_name: LLaxx's notes
+nav:
+  - Home: index.md
+  - About: about.md
