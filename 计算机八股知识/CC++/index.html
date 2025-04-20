@@ -1,0 +1,1715 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../6.584/6.584Lab2%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>大杂烩 - LLaxx's notes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="LLaxx&#39;s notes" class="md-header__button md-logo" aria-label="LLaxx's notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LLaxx's notes
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              大杂烩
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="LLaxx&#39;s notes" class="md-nav__button md-logo" aria-label="LLaxx's notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    LLaxx's notes
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    6.584
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            6.584
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6.584/6.584Lab2%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    实验心得
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    计算机八股知识
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            计算机八股知识
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    大杂烩
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    大杂烩
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cc" class="md-nav__link">
+    <span class="md-ellipsis">
+      C\C++
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C\C++">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raotate" class="md-nav__link">
+    <span class="md-ellipsis">
+      raotate函数的使用
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#static" class="md-nav__link">
+    <span class="md-ellipsis">
+      static关键字的用法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="static关键字的用法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    <span class="md-ellipsis">
+      c中的用法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      c++中的用法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#const" class="md-nav__link">
+    <span class="md-ellipsis">
+      const关键字的用法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="const关键字的用法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#const_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      const变量
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#const_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      const类对象
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constconst" class="md-nav__link">
+    <span class="md-ellipsis">
+      指向const变量的指针和const指针
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#const_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      const成员变量
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#const_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      const返回值
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#const_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      const成员函数
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hhpp" class="md-nav__link">
+    <span class="md-ellipsis">
+      .h文件和.hpp文件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      关于模板
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="关于模板">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      函数模板的类型检查
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      关于继承权限
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      关于虚函数
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="关于虚函数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      关于对象所占空间大小
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      关于非虚的成员函数调用
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stl-unordered_map" class="md-nav__link">
+    <span class="md-ellipsis">
+      对于STL容器 unordered_map 源码的阅读
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rvonrvo" class="md-nav__link">
+    <span class="md-ellipsis">
+      记录一下关于RVO/NRVO的初探索
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      左值引用与右值引用
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      关于访问私有成员
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      数据库
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="数据库">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#minisql" class="md-nav__link">
+    <span class="md-ellipsis">
+      关于minisql项目
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      计网
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="计网">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      TCP三次握手
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcpudp" class="md-nav__link">
+    <span class="md-ellipsis">
+      TCP和UDP的区别
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#osi" class="md-nav__link">
+    <span class="md-ellipsis">
+      OSI七层模型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getpost" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET和POST
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcp_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      TCP的流量控制和拥塞控制
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcp_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      TCP三握手
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcp_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      TCP四挥手
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      关于端口
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-https" class="md-nav__link">
+    <span class="md-ellipsis">
+      关于安全通信-以https为例
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      操作系统
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="操作系统">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#epollio" class="md-nav__link">
+    <span class="md-ellipsis">
+      关于epoll（以及不同形式的IO）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slab" class="md-nav__link">
+    <span class="md-ellipsis">
+      slab内存管理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mit-linearizability" class="md-nav__link">
+    <span class="md-ellipsis">
+      mit linearizability
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cc" class="md-nav__link">
+    <span class="md-ellipsis">
+      C\C++
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C\C++">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raotate" class="md-nav__link">
+    <span class="md-ellipsis">
+      raotate函数的使用
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#static" class="md-nav__link">
+    <span class="md-ellipsis">
+      static关键字的用法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="static关键字的用法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    <span class="md-ellipsis">
+      c中的用法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      c++中的用法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#const" class="md-nav__link">
+    <span class="md-ellipsis">
+      const关键字的用法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="const关键字的用法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#const_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      const变量
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#const_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      const类对象
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constconst" class="md-nav__link">
+    <span class="md-ellipsis">
+      指向const变量的指针和const指针
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#const_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      const成员变量
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#const_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      const返回值
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#const_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      const成员函数
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hhpp" class="md-nav__link">
+    <span class="md-ellipsis">
+      .h文件和.hpp文件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      关于模板
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="关于模板">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      函数模板的类型检查
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      关于继承权限
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      关于虚函数
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="关于虚函数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      关于对象所占空间大小
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      关于非虚的成员函数调用
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stl-unordered_map" class="md-nav__link">
+    <span class="md-ellipsis">
+      对于STL容器 unordered_map 源码的阅读
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rvonrvo" class="md-nav__link">
+    <span class="md-ellipsis">
+      记录一下关于RVO/NRVO的初探索
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      左值引用与右值引用
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      关于访问私有成员
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      数据库
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="数据库">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#minisql" class="md-nav__link">
+    <span class="md-ellipsis">
+      关于minisql项目
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      计网
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="计网">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      TCP三次握手
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcpudp" class="md-nav__link">
+    <span class="md-ellipsis">
+      TCP和UDP的区别
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#osi" class="md-nav__link">
+    <span class="md-ellipsis">
+      OSI七层模型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getpost" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET和POST
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcp_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      TCP的流量控制和拥塞控制
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcp_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      TCP三握手
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcp_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      TCP四挥手
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      关于端口
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-https" class="md-nav__link">
+    <span class="md-ellipsis">
+      关于安全通信-以https为例
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      操作系统
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="操作系统">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#epollio" class="md-nav__link">
+    <span class="md-ellipsis">
+      关于epoll（以及不同形式的IO）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slab" class="md-nav__link">
+    <span class="md-ellipsis">
+      slab内存管理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mit-linearizability" class="md-nav__link">
+    <span class="md-ellipsis">
+      mit linearizability
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">八股文</h1>
+<h2 id="cc">C\C++</h2>
+<ol>
+<li>main函数前后
+   <a href="https://interviewguide.cn/notes/03-hunting_job/02-interview/01-01-01-basic.html">基础语法-01-20 | 阿秀的学习笔记</a></li>
+</ol>
+<h3 id="raotate">raotate函数的使用</h3>
+<pre><code>vector&lt;int&gt; a = {1,2,3,4,5,6,7,8};
+rotate(a.begin(), a.begin()+3,  a.end());//{4,5,6,7,8,1,2,3,4}
+auto begin = a.find(7);
+auto end = a.find(3);
+rotate(begin, begin+2, end);
+</code></pre>
+<h3 id="static">static关键字的用法</h3>
+<h4 id="c">c中的用法</h4>
+<p>首先是在c中的用法，分为三种情况：修饰局部变量、修饰全局变量、修饰函数。</p>
+<ul>
+<li>静态局部变量，会使得原本存储在栈区的变量变成存储在数据段，这样一来，变量的作用域大小没有变，生命周期变得和全局变量一样。并且该变量只会被初始化一次，若未被初始化会默认初始化为0</li>
+<li>静态全局变量和函数会使得外部文件无法引用该变量或函数，即改变了全局变量和函数的外部链接属性</li>
+</ul>
+<h4 id="c_1">c++中的用法</h4>
+<ul>
+<li>静态成员变量，必须在类外定义与初始化，在定义时不用加static，要用类名::变量名来定义。静态成员变量为所有类对象所共享，不属于某个具体的实例。</li>
+<li>静态成员函数没有隐藏的this指针，不能访问任何非静态成员，只能访问静态成员变量。而非静态成员函数可以调用类的静态成员函数</li>
+</ul>
+<h3 id="const">const关键字的用法</h3>
+<p><a href="https://zhuanlan.zhihu.com/p/90720012">C/C++ 基础中的基础： const 修饰符用法总结！ - 知乎</a></p>
+<h4 id="const_1">const变量</h4>
+<p>const变量必须被初始化，const结构体变量表示结构体内的任何数据域都不可被改变，且需要另一个结构体变量进行初始化</p>
+<h4 id="const_2">const类对象</h4>
+<p>const类对象与const变量并无什么区别。要注意的是这里“初始化”和“改变”的定义有些不同。初始化指的就是能成功调用构造函数，而改变指的是改变成员变量以及调用非常量成员函数。</p>
+<h4 id="constconst">指向const变量的指针和const指针</h4>
+<p>这两个容易让人混淆，因此可以这么理解：从右向左、依次结合、const就近结合</p>
+<p>比如<code>const int * const p</code>可以这么解读：</p>
+<ol>
+<li>p是一个变量 </li>
+<li>const p表示p是一个常量，也就是说p本身的值无法被改变</li>
+<li><code>* const p</code> 表示p是一个指针</li>
+<li><code>int * const p</code> 表示p指向的是一个int</li>
+<li><code>const int * const p</code>表示p指向的是一个常量的int</li>
+</ol>
+<p>当使用指针访问一个变量时，编译器是通过指针类型（const int *）来判断这个变量到底是否只读的。因此使用以下代码，我们可以“改变”一个const变量。</p>
+<pre><code class="language-c++">const int i = 0;
+int * q;
+q = const_cast&lt;int*&gt;(&amp;i);
+*q = 10;
+cout&lt;&lt;*q&lt;&lt;&quot; &quot;&lt;&lt;i;
+</code></pre>
+<p>以上代码是可以通过编译并正常运行的，但是输出结果却不一定。在编译器版本比较低的时候确实能看到输出了两个相同的值，但是编译器版本高了之后会发现 <code>i</code> 的值没有发生变化。这是由于编译器的优化导致实际上当你在访问<code>i</code>的时候编译器会直接使用值的替换，所以在程序的实际运行中不会产生一次变量访问。所以使用const全局变量来代替宏定义具有相同的执行效率并且还能让编译器进行类型检查。</p>
+<h4 id="const_3">const成员变量</h4>
+<p>const成员变量必须被初始化（在类的构造函数的初始化列表中）。</p>
+<p>类对象的实例化过程可以理解为包含以下步骤：首先分配整个类对象的内存空间，然后分配各个成员变量的内存空间，并根据构造函数的初始化列表进行初始化。最后再执行构造函数的代码。由于const变量在定义时就要进行初始化，所以只能在初始化列表中初始化，然后就不能更改了。</p>
+<h4 id="const_4">const返回值</h4>
+<p>函数返回const返回值一般用于返回一个const引用，如果只是返回引用那么其实可以直接更改这个引用所指向的值，但是如果是常量引用那就改不了了。</p>
+<h4 id="const_5">const成员函数</h4>
+<p>const成员函数是指此函数不能修改任何成员变量。传给const函数的this指针是指向const对象的const指针，所以const函数不能修改任何成员变量，除非成员变量被mutable修饰符修饰。</p>
+<p>这里应该注意，由于const成员函数的this指针指向的是const对象，那么如果const成员函数想要调用非const成员函数，就要把自己的this指针传给要调用的函数，但是const变量是不能隐式转换为普通变量的，因此就会出现错误，调用失败。同理，“const对象只能调用const成员函数”也是这个道理。</p>
+<h3 id="hhpp">.h文件和.hpp文件</h3>
+<p>一般来说h文件都只存放声明以及inline函数的定义，而hpp文件更像h文件和cpp文件的混合，可以大幅度减少调用项目中的cpp文件数量和编译次数。同时，引入hpp的一大原因就是模板</p>
+<h3 id="_2">关于模板</h3>
+<p>模板更像一种宏，只有在被某个编译模块调用的时候才会在该编译模块初始化出一个示例，模板本身是不会产生汇编代码的，是模板生成的具体化实例才会产生指令</p>
+<h4 id="_3">函数模板的类型检查</h4>
+<p>带模板的函数会经历两阶段的检查：</p>
+<ul>
+<li>第一阶段检查与类型参数无关的代码</li>
+<li>第二阶段发生在模板函数实例化之后，此时检查与类型参数相关的代码</li>
+</ul>
+<pre><code class="language-C++">&lt;template T&gt;
+T max(const T&amp; a, const T&amp; b) {
+    c = 1; //这里会在第一阶段报错
+    return a&gt;b?a:b; //如果T不支持比较大小的操作这里会在di'er
+}
+</code></pre>
+<h3 id="_4">关于继承权限</h3>
+<p><img alt="image-20250318213429433" src="C:\Users\16340\AppData\Roaming\Typora\typora-user-images\image-20250318213429433.png" /></p>
+<h3 id="_5">关于虚函数</h3>
+<p>对于每一个实现了虚函数的类来说，都有一个虚表负责存放对应虚函数的函数指针。当我们实例化这个类，在执行这个类的构造函数时，会初始化一个指向这个虚表的虚指针。
+虚函数一般会在类的继承中与一般的函数产生区别。例子如下</p>
+<pre><code class="language-c++">#include&lt;iostream&gt;  
+using namespace std;  
+
+class A  
+{  
+public:  
+    void foo()  
+    {  
+        printf(&quot;1\n&quot;);  
+    }  
+    virtual void fun()  
+    {  
+        printf(&quot;2\n&quot;);  
+    }  
+};  
+class B : public A  
+{  
+public:  
+    void foo()  //隐藏：派生类的函数屏蔽了与其同名的基类函数
+    {  
+        printf(&quot;3\n&quot;);  
+    }  
+    void fun()  //多态、覆盖
+    {  
+        printf(&quot;4\n&quot;);  
+    }  
+};  
+
+class C : class B
+{
+public:
+    void foo() {
+        printf(&quot;5\n&quot;);
+    }
+    void fun() { //此时还是可以实现虚函数的多态覆盖
+        printf(&quot;6\n&quot;);
+    }
+}
+int main(void)  
+{  
+    A a;  
+    B b;  
+    A *p = &amp;a;  
+    p-&gt;foo();  //输出1
+    p-&gt;fun();  //输出2
+    p = &amp;b;  
+    p-&gt;foo();  //取决于指针类型，输出1
+    p-&gt;fun();  //取决于对象类型，输出4，体现了多态
+    return 0;  
+}
+</code></pre>
+<p>纯虚函数在基类中定义时要在函数原型后面加=0：<code>virtual void funtion1()=0</code></p>
+<p><img alt="image-20250318223025106" src="C:\Users\16340\AppData\Roaming\Typora\typora-user-images\image-20250318223025106.png" /></p>
+<p>如上图所示，最左边的是三个对象，他们的顶部都有一个地址，这个地址指向的就是其对应类的虚表。在虚表中又存储了若干个指向虚函数的函数指针，可以看到在子类实现的虚函数会把基类的虚函数覆盖掉。这里有两个题外话：</p>
+<h4 id="_6">关于对象所占空间大小</h4>
+<p>第一个是子类创建对象时会继承基类的private变量，但是这对于子类来说时不可见的，只是占用了内存空间（这里的原因是你可以把指向子类的指针转化成父类类型的指针，这样就要求你可以访问原先private的成员变量！），这里还有一点要注意，一个空类对象（也就是没有成员变量和虚函数的类），大小是1，为什么布什0呢，因为实例化要求每个实例在内存中都有一个独一无二的地址，为了达到这个目的，编译器往往会给空类隐含地添加一个字节；</p>
+<h4 id="_7">关于非虚的成员函数调用</h4>
+<p>第二个是非虚的成员函数的调用，其实是相当于调用了一个全局函数，只不过多了一个this的指针参数，可以视作obj.func()变成func(obj)</p>
+<h3 id="stl-unordered_map">对于STL容器 unordered_map 源码的阅读</h3>
+<h3 id="rvonrvo">记录一下关于RVO/NRVO的初探索</h3>
+<p><a href="https://mp.weixin.qq.com/s/LwnDtK6HNZo_StIxQ5yJhA">编译器之返回值优化</a> <a href="https://zhuanlan.zhihu.com/p/97128024">c++ 左值引用与右值引用 - 知乎</a></p>
+<p>这两篇文章讲的太好了，但就是有一点和我的实验有所出入：使用赋值重载函数时也会发生RVO。是这样的，当你运行如下代码：</p>
+<pre><code class="language-c++">#include &lt;iostream&gt;
+using namespace std;
+
+
+class Stack
+{
+public:
+    // 构造
+    Stack(int size = 1000) 
+    :msize(size), mtop(0)
+    {
+    cout &lt;&lt; &quot;Stack(int)&quot; &lt;&lt; this &lt;&lt; endl;
+    mpstack = new int[size];
+    }
+
+    // 析构
+    ~Stack()
+    {
+    cout &lt;&lt; &quot;~Stack()&quot; &lt;&lt; this &lt;&lt; endl;
+    delete[]mpstack;
+    mpstack = nullptr;
+    }
+
+    // 拷贝构造
+    Stack(const Stack &amp;src)
+    :msize(src.msize), mtop(src.mtop)
+    {
+    cout &lt;&lt; &quot;Stack(const Stack&amp;)&quot; &lt;&lt; endl;
+    mpstack = new int[src.msize];
+    for (int i = 0; i &lt; mtop; ++i) {
+        mpstack[i] = src.mpstack[i];
+    }
+    }
+
+    // 赋值重载
+    Stack&amp; operator=(const Stack &amp;src)
+    {
+    cout &lt;&lt; &quot;operator=&quot; &lt;&lt; endl;
+    if (this == &amp;src)
+            return *this;
+
+    delete[]mpstack;
+
+    msize = src.msize;
+    mtop = src.mtop;
+    mpstack = new int[src.msize];
+    for (int i = 0; i &lt; mtop; ++i) {
+        mpstack[i] = src.mpstack[i];
+    }
+    return *this;
+    }
+
+    int getSize() 
+    {
+    return msize;
+    }
+private:
+    int *mpstack;
+    int mtop;
+    int msize;
+
+};
+
+Stack GetStack(Stack &amp;stack)
+{
+    Stack tmp(stack.getSize());
+    return tmp;
+}
+
+int main()
+{
+    Stack s;
+    s = GetStack(s);
+    // Stack s1;
+    // s1 = s;
+    return 0;
+}
+</code></pre>
+<p>使用<code>-fno-elide-constructors</code>关闭编译器优化之后，结果如下：</p>
+<pre><code>Stack(int)0x61fdf0
+Stack(int)0x61fda0
+Stack(const Stack&amp;)
+~Stack()0x61fda0
+operator=
+~Stack()0x61fe00
+~Stack()0x61fdf0
+</code></pre>
+<p>也就是说，局部变量 <code>tmp</code> 确实在 <code>GetStack</code> 函数结束之后被析构了，返回值的传递是由临时构造出来的对象通过栈传递给调用者的。但是在经过编译器优化后，也就是发生了RVO后会出现以下结果：</p>
+<pre><code>Stack(int)0x61fdf0
+Stack(int)0x61fe00
+operator=
+~Stack()0x61fe00
+~Stack()0x61fdf0
+</code></pre>
+<p>以上的结果说明了什么？说明tmp这个变量被作为返回值直接被传递回去了，实际上是兼顾了原先的那个”临时变量“的职责，它被推到栈里面并作为赋值重载语句的参数参与了后面的代码运行。</p>
+<h3 id="_8">左值引用与右值引用</h3>
+<p>首先应该声明左值和右值是什么，左值一般被认为是可取地址的，有名字的，非临时的变量；右值一般被认为是不可取地址，没有名字的，临时的变量。</p>
+<p>然后就是左值引用，左值引用就是一般的引用，一般在汇编层面上就是以指针的方式实现的，只不过会具有不可为空值，不可重新赋值等特点。但是左值引用有一个问题，像这样的语句</p>
+<pre><code class="language-c++">int &amp;var = 10
+</code></pre>
+<p>是不被允许的，原因就是10作为一个右值是无法取地址的</p>
+<p>而就右值引用来说，</p>
+<h3 id="_9">关于访问私有成员</h3>
+<p>事实上，只要你在类内或者已声明的友类内，就可以访问私有变量，不管这个私有变量是不是属于这个实例对象（也就是说也可以是其它实例的），而如果你在类外，那就是不能访问，由编译器来维护这样的规则</p>
+<h2 id="_10">数据库</h2>
+<ol>
+<li>为什么一般场景下都使用RC隔离级别？
+   缘由一：在RR隔离级别下，存在间隙锁，导致出现死锁的几率比RC大的多！ 缘由二：在RR隔离级别下，条件列未命中索引会锁表！而在RC隔离级别下，只锁行!</li>
+<li>主键自增的劣势：
+   在高并发的场景下，在InnoDB中按主键顺序插入可能会造成明显的争用。主键上界会成为”热点”，因为所有的插入都发生在这里，所以并发插入可能导致间隙锁竞争；另一个热点可能是AUTO_INCREMENT锁机制：如果遇到这个问题，则可能需要考虑重新设计表或者应用，或者更改innodb_autoinc_lock_mode配置</li>
+<li>mysql自身的查询缓存比较垃圾，一般可以用redis、memcache等专业的缓存工具</li>
+<li>如何对16G大小的数据进行去重？bitmap法，分桶去重</li>
+</ol>
+<p>我想知道，数据库中的所谓的物理页和os中的frame是一个东西吗</p>
+<h3 id="minisql">关于minisql项目</h3>
+<ul>
+<li>在内存管理方面：首先，minisql基于磁盘中的文件构建了一整个数据库，所有页的信息都以page的形式存在文件里面，这个文件里面的page分为元数据页和真正存储数据的数据页，这个文件暴露给上层的接口都只接受逻辑页号，也就是将真正的数据页视为连续的，这就需要管理这个文件的类在内部处理时将其提前转为物理页号。而在内存中，数据库维持一个buffer pool，这里面最关键的数据结构是一个page数组，page类相当于一个容器，可以放进去不同的页的数据，page在数组中的下标相当于所谓的“frame id”，上层所使用的相当于“logical id”，我们同样维持一个页表对其的映射关系进行记录。值得一提的是，这里的logical id就是磁盘文件所呈现的logical id。
+  <img alt="image.png" src="https://cdn.nlark.com/yuque/0/2022/png/25540491/1648371054209-c0dd543c-8ca2-4be0-b0b9-e4a505b0c2de.png?x-oss-process=image%2Fformat%2Cwebp" />
+  <img alt="image.png" src="https://cdn.nlark.com/yuque/0/2022/png/25540491/1648370611392-3116a928-60ef-4df3-b0fa-5903a431729f.png?x-oss-process=image%2Fformat%2Cwebp" /></li>
+<li>在记录管理方面，一个表最多只支持32个属性，这个是为了实现上的便利，因为在定义一条记录时，里面的一项可能为空，这个时候就需要使用一个bitmap去记录哪些项可能为空，还有一方面就是使用堆表管理记录的时候，我们为了加快删除速度，都是要先将其标记为删除的，若不怎么让它支持更多属性？
+  <img alt="image.png" src="https://cdn.nlark.com/yuque/0/2022/png/25540491/1649165584868-b8768a94-7287-4ffa-8283-126368851db6.png?x-oss-process=image%2Fformat%2Cwebp" /></li>
+</ul>
+<h2 id="_11">计网</h2>
+<h3 id="tcp">TCP三次握手</h3>
+<p>过程：</p>
+<ul>
+<li>服务器创建传输控制块，被动打开连接，进入LISTEN状态</li>
+<li>客户主动打开连接，发送SYN=1，seq=x的报文段，进入SYN-SENT状态，SYN为1的报文段不能携带数据</li>
+<li>服务端收到后发送SYN=1，ACK=1，seq=y，ack=x+1的报文段，进入SYN-RCVD状态，与上面同理</li>
+<li>客户端发送ACK=1,，seq=x+1，ack=y+1的报文段，进入ESTABLISH状态，这个可以携带数据，但如果不携带数据，就不消耗一个序号，数据报文段的seq就仍是x+1</li>
+<li>服务端收到后进入ESTABLISH状态</li>
+</ul>
+<h3 id="tcpudp">TCP和UDP的区别</h3>
+<p><img alt="img" src="https://pic3.zhimg.com/v2-0a749b8af6d8facd140874859b681ef6_r.jpg" /></p>
+<ul>
+<li>
+<p>TCP是可靠的、面向连接的流协议。流是指不间断的数据结构，TCP可以保证应用层传下来的数据发送的顺序，但是会像没有间隔一样地发送给接收端。TCP把应用层交付的数据视为一连串的无结构的字节流，TCP和应用层之间有缓冲区，当应用层一次性交付的数据太多了的时候，TCP可以将它划分后再发送。TCP协议实现了许多数据传输时的控制功能，比如丢包重传、对次序乱掉的包进行顺序控制。</p>
+</li>
+<li>
+<p>UDP是不可靠的、面向报文的数据报协议。面向报文是指无论应用层一次性交给UDP多长的报文，UDP都会照样一次性发送。所以必须由应用层选择合适大小的报文。</p>
+</li>
+<li>
+<p>TCP应用：HTTP、SMTP、FTP、TELNET（用于远程接入）</p>
+</li>
+<li>
+<p>UDP应用：DNS、SNMP（网络管理）</p>
+</li>
+</ul>
+<h3 id="osi">OSI七层模型</h3>
+<p><strong>应用层：为应用程序或用户请求提供各种请求服务。</strong>OSI参考模型最高层，也是最靠近用户的一层，为计算机用户、各种应用程序以及网络提供接口，也为用户直接提供各种网络服务。</p>
+<p><strong>表示层：数据编码、格式转换、数据加密。</strong>提供各种用于应用层数据的编码和转换功能,确保一个系统的应用层发送的数据能被另一个系统的应用层识别。如果必要，该层可提供一种标准表示形式，用于将计算机内部的多种数据格式转换成通信中采用的标准表示形式。数据压缩和加密也是表示层可提供的转换功能之一。</p>
+<p><strong>会话层：创建、管理和维护会话。</strong>接收来自传输层的数据，负责建立、管理和终止表示层实体之间的通信会话，支持它们之间的数据交换。该层的通信由不同设备中的应用程序之间的服务请求和响应组成。</p>
+<p><strong>传输层：数据通信。</strong>建立主机端到端的链接，为会话层和网络层提供端到端可靠的和透明的数据传输服务，确保数据能完整的传输到网络层。</p>
+<p><strong>网络层：IP选址及路由选择。</strong>通过路由选择算法，为报文或通信子网选择最适当的路径。控制数据链路层与传输层之间的信息转发，建立、维持和终止网络的连接。数据链路层的数据在这一层被转换为数据包，然后通过路径选择、分段组合、顺序、进/出路由等控制，将信息从一个网络设备传送到另一个网络设备。</p>
+<p><strong>数据链路层：提供介质访问和链路管理。</strong>接收来自物理层的位流形式的数据，封装成帧，传送到网络层；将网络层的数据帧，拆装为位流形式的数据转发到物理层；负责建立和管理节点间的链路，通过各种控制协议，将有差错的物理信道变为无差错的、能可靠传输数据帧的数据链路。</p>
+<p><strong>物理层：管理通信设备和网络媒体之间的互联互通。</strong>传输介质为数据链路层提供物理连接，实现比特流的透明传输。实现相邻计算机节点之间比特流的透明传送，屏蔽具体传输介质和物理设备的差异</p>
+<h3 id="getpost">GET和POST</h3>
+<h3 id="tcp_1">TCP的流量控制和拥塞控制</h3>
+<ul>
+<li>TCP的流量控制：流量控制是为了解决接收方和发送方处理数据的速度的差异导致的数据丢失问题，当发送方发送数据的速度太快时，接收方的缓冲区就有可能发生数据溢出导致数据丢失。
+  解决方法是使用滑动窗口，在TCP的首部中维持一个window字段，接收方用其指明自己的缓冲区还有多少空余空间。当接收方声明自己的缓冲区余量为0后，发送方即不再向接收方发送数据直到再一次接收到接收方具有余量的通知。若一段时间后发送方还没有收到接收方的通知，则会发送一个空数据包用于探测最新的窗口数据。</li>
+<li>拥塞的定义：在某段时间内，外部向网络注入的数据量远超网络内资源可以处理的限度，导致网络性能急剧下降，叫做拥塞。
+  TCP的发送方维护了一个cwnd窗口，该窗口反映了发送方对于网络拥塞情况的认知（实际上的发送窗口大小取cwnd与接收方通知的窗口值中的小值）。ssthresh是指慢开始门限，是为了防止cwnd增长过快所设置的门限值。一般通过四种算法实现拥塞控制管理：</li>
+<li>慢开始：当swnd&lt;ssthresh时，从窗口大小为1的窗口开始，然后翻倍增长</li>
+<li>拥塞避免：当cwnd&gt;ssthresh时，每次只增长1</li>
+<li>快重传：接收方即使收到失序的报文段也要立即发出对已接收报文段的确认。发送方在收到接收方的连续三个重复确认后立即开始重传</li>
+<li>快恢复：快重传之后cwnd不从1开始，从ssthresh/2开始</li>
+</ul>
+<h3 id="tcp_2">TCP三握手</h3>
+<p>过程：</p>
+<ul>
+<li>服务器创建传输控制块，被动打开连接，进入LISTEN状态</li>
+<li>客户主动打开连接，发送SYN=1，seq=x的报文段，进入SYN-SENT状态，SYN为1的报文段不能携带数据，但小号一个序号</li>
+<li>服务端收到后发送SYN=1，ACK=1，seq=y，ack=x+1的报文段，进入SYN-RCVD状态，与上面同理，也要消耗一个序号</li>
+<li>客户端发送ACK=1,，seq=x+1，ack=y+1的报文段，进入ESTABLISH状态，这个可以携带数据，但如果不携带数据，就不会消耗一个序号，数据报文段的seq就仍是x+1</li>
+<li>服务端收到后进入ESTABLISH状态</li>
+</ul>
+<p>这里引用阿里云上一篇文章里的内容解释一下为啥只有三次握手才能确认双方的接受与发送能力是否正常，而两次却不可以：</p>
+<ul>
+<li>第一次握手：客户端发送网络包，服务端收到了。这样服务端就能得出结论：<strong>客户端的发送能力、服务端的接收能力是正常的</strong>。</li>
+<li>第二次握手：服务端发包，客户端收到了。这样客户端就能得出结论：<strong>服务端的接收、发送能力，客户端的接收、发送能力是正常的。不过此时服务器并不能确认客户端的接收能力是否正常</strong>。</li>
+<li>第三次握手：客户端发包，服务端收到了。这样服务端就能得出结论：客<strong>户端的接收、发送能力正常，服务器自己的发送、接收能力也正常</strong>。</li>
+</ul>
+<p>我们也可以从另一个角度看，就是两次握手的话会发生什么：
+两次握手意味着服务器发出ack报文之后就进入ESTABLISH状态。此时如果第一次客户端的连接请求被延误了导致重发，重发后两者成功建立连接，一段时间后成功断开。若此时第一次被延误的请求到达了服务端，那么服务端会发出ACK报文后进入连接，但是此时客户端关闭，无法进入连接，这样服务端的资源就被空置了。</p>
+<h3 id="tcp_3">TCP四挥手</h3>
+<p>过程：</p>
+<ul>
+<li>客户端主动关闭连接，发送FIN报文，进入FIN-WAIT1状态</li>
+<li>服务器接收并发送ACK=1的报文，此时应用程序开始发送最后的数据，进入CLOSE-WAIT状态</li>
+<li>客户端接收并等待，进入FIN-WAIT2状态</li>
+<li>服务器发送完数据后发送FIN=1,ACK=1的报文，进入LAST-ACK状态</li>
+<li>客户端接收并发送ACK=1的报文，进入TIME-WAIT状态，并维持2MSL的时间后关闭</li>
+<li>原因：如果该ACK报文丢失，服务器会重发FIN报文，此时客户端需要重发该报文，若不等待直接关闭可能导致服务器资源空置</li>
+<li>服务器接收到后关闭</li>
+</ul>
+<p>如果在TCP连接中有一方突然断联会发生什么</p>
+<p>UDP和TCP的区别以及UDP的实现细节</p>
+<p>容器的CGROUP</p>
+<p>容器和虚拟机的差别</p>
+<p>堆算法</p>
+<p>内核态和用户态是怎么隔离的</p>
+<p>64位的内核如何兼容32位系统</p>
+<h3 id="_12">关于端口</h3>
+<p>在计网课程中我们学到在TCP连接中的端点是套接字socket，也可以说是{ ip address : port}，ip地址有详细讲过，是每台主机在网络中的唯一标识，</p>
+<p>。。。</p>
+<h3 id="-https">关于安全通信-以https为例</h3>
+<ul>
+<li>
+<p>风险：窃听风险， 篡改风险，冒充风险</p>
+</li>
+<li>
+<p>安全通信的四个原则：加密性，完整性，身份认证性，不可否认性</p>
+</li>
+<li>
+<p>https加密原理：server持有一对公钥和私钥，公钥向网络公布，client先生成一个用来对称加密的通信密钥，然后利用server的公钥进行非对称加密并传输。</p>
+</li>
+</ul>
+<p>#### 问题1：如何解决公钥传输信任问题？</p>
+<ul>
+<li>
+<p>首先，server有一份自己的数字证书，上面有权威机构CA的数字签名以及自己的公钥</p>
+</li>
+<li>
+<p>签名生成过程：server会生成自己的数字证书，其上的内容包括公钥等，然后server将这份数字证书传给CA，CA将证书明文作为输入，使用摘要算法得出一份定长的和输入几乎一一对应的字符串，然后CA使用自己的私钥对其进行加密，这样就生成了数字签名</p>
+</li>
+<li>
+<p>client拿到这份证书之后，</p>
+</li>
+</ul>
+<h2 id="_13">操作系统</h2>
+<p>死锁四个条件：互斥锁（Mutual exclusion）、持有并等待（Hold  and wait）、非抢占式（No preemption）、循环等待（Circular waiting）</p>
+<h3 id="epollio">关于epoll（以及不同形式的IO）</h3>
+<p><a href="https://www.cnblogs.com/cainingning/p/9556642.html">并发编程(IO多路复用) - cai128118* - 博客园</a>
+select，epoll的实现以及区别</p>
+<h3 id="slab">slab内存管理</h3>
+<p>简单来说，slab内存分配器应该是依赖于buddy内存管理器的粒度更小的一种内存管理方式，</p>
+<ul>
+<li></li>
+</ul>
+<p>redis，es</p>
+<h3 id="mit-linearizability">mit linearizability</h3>
+<p>问：什么是线性一致性</p>
+<p>答：线性一致性是在服务器面对并发的客户端请求这样的场景下对于正确性行为的定义。粗略地来讲，它要求服务器处理的结果应该和按照请求到来的时间串行处理的结果保持一致。</p>
+<p>线性一致性应该是基于“历史”实现的，这里的“历史”记录了客户端开始这个操作的时间和客户端看见这个操作结束的时间，线性一致性就是定义了什么样的历史记录是合理的，以及如果一个服务器生成的历史都是线性一致的，那么我们称这个服务器是线性一致的。</p>
+<p>对于客户端开始操作和客户端判定操作完成这两个事件，历史记录会分别进行记录。从而使历史记录明确显示客户端之间的并发情况和网络延迟。通常情况下，这两个开始与结束事件分别对应客户端与服务器之间交换的请求消息和响应消息。</p>
+<p>线性化点：对于一条操作来说，线性化点位于它的开始点和结束点之间。如果存在一种线性化点的分布可以使得这个历史按照线性点的顺序执行每条操作后得到的对应值和原历史的一样，那么我们说这个历史是线性一致的。</p>
+<p>线性一致性的一个重要结果是：服务可以自由决定并发（时间上重叠）操作的执行顺序。具体来说，若客户端 C1 和 C2 的操作是并发的，即使 C1 的操作先于 C2 启动，服务器仍可先执行 C2 的操作。另一方面，如果 C1 的操作在 C2 启动前就已完成，线性一致性要求服务必须表现出先执行 C1 操作的行为（即 C2 的操作必须能观察到 C1 操作的所有影响，若有的话）。</p>
+<p>问：线性一致性 checker 是如何工作的</p>
+<p>一个简单的线性一致性检查器会尝试所有可能的顺序（或线性化点的选择），以验证是否存在符合线性一致性定义规则的有效顺序。由于这种方法在大型历史记录上速度太慢，聪明的检查器会采取以下优化措施：</p>
+<ol>
+<li>跳过明显不可能的顺序（例如拟议的线性化点早于操作的开始时间）</li>
+<li>在可能的情况下将历史分解为可独立验证的子历史</li>
+<li>使用启发式方法优先尝试更可能的顺序</li>
+</ol>
+<pre><code>http://www.cs.ox.ac.uk/people/gavin.lowe/LinearizabiltyTesting/paper.pdf
+https://arxiv.org/pdf/1504.00204.pdf
+</code></pre>
+<p>问：服务器是靠线性一致性的checkers实现线性一致性的吗？如果不是那怎么实现？</p>
+<p>答：并不是，checkers只是检查的一部分；而对于single的server来说，一般按照到达时间处理请求即可。最需要注意的就是客户端可能会由于单方面地认为网络丢包而重复发送请求，所以服务器要特别注意</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs.sticky", "navigation.tabs.animated", "navigation.tabs.underline", "navigation.tabs.stretch", "navigation.tabs.autoscroll", "navigation.tabs.overflow", "navigation.tabs.hide", "navigation.tabs.scrollable", "navigation.tabs.persistent", "navigation.tabs.underline.fullwidth"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
